@@ -1,0 +1,179 @@
+.classroom-grid {
+  display: grid;
+  grid-template-columns: 70% calc(30% - 20px);
+  gap: 20px;
+}
+.classroom-grid-right {
+  border: 1px solid #ccc;
+  height: -moz-fit-content;
+  height: fit-content;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  background-color: var(--white-color);
+}
+
+.classroom-right-top {
+  padding: 15px;
+  background-color: var(--main-color);
+  border-radius: 5px 5px 0 0;
+  -webkit-border-radius: 5px 5px 0 0;
+  -moz-border-radius: 5px 5px 0 0;
+  -ms-border-radius: 5px 5px 0 0;
+  -o-border-radius: 5px 5px 0 0;
+}
+.classroom-right-form {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.classroom-right-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.classroom-right-form label p {
+  font-size: 14px;
+  color: var(--black-color);
+}
+.classroom-right-form label input, .classroom-right-form label select {
+  padding: 7px 10px;
+  font-size: 16px;
+  outline: none;
+  border: 1px solid var(--main-color);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.classroom-right-form-btn {
+  background-color: var(--main-color);
+  padding: 7px 10px;
+  color: #fff;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.single-class {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.single-class-head {
+  background-color: var(--white-color);
+  padding: 15px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.single-class-head .head-name {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.single-class-head .head-name .index {
+  background-color: var(--main-color);
+  color: #fff;
+  padding: 2px 10px;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.single-class-head .head-name .name {
+  font-size: 20px;
+  color: var(--black-color);
+}
+.single-class-head .head-btns {
+  background-color: var(--main-color);
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  cursor: pointer;
+}
+.single-class-body {
+  display: grid;
+  grid-template-columns: 70% calc(30% - 20px);
+  gap: 20px;
+  box-sizing: border-box;
+}
+.single-class-body-left .class-table-head {
+  display: flex;
+  align-items: center;
+  background-color: var(--main-color);
+  border-radius: 5px 5px 0 0;
+  -webkit-border-radius: 5px 5px 0 0;
+  -moz-border-radius: 5px 5px 0 0;
+  -ms-border-radius: 5px 5px 0 0;
+  -o-border-radius: 5px 5px 0 0;
+}
+.single-class-body-left .class-table-head-item {
+  width: calc(50% - 51px);
+  padding: 5px 10px;
+  color: #fff;
+  border-left: 1px solid #ccc;
+}
+.single-class-body-left .class-table-head-mini {
+  width: 100px;
+  padding: 5px 10px;
+  color: #fff;
+  text-align: center;
+}
+.single-class-body-left .class-table-body {
+  background-color: var(--white-color);
+  border-radius: 0 0 5px 5px;
+  -webkit-border-radius: 0 0 5px 5px;
+  -moz-border-radius: 0 0 5px 5px;
+  -ms-border-radius: 0 0 5px 5px;
+  -o-border-radius: 0 0 5px 5px;
+}
+.single-class-body-left .class-table-body-items {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+}
+.single-class-body-left .class-table-body-items:last-child {
+  border-bottom: none;
+}
+.single-class-body-left .class-table-body-item {
+  width: calc(50% - 51px);
+  padding: 5px 10px;
+  color: var(--black-color);
+  border-left: 1px solid #ccc;
+}
+.single-class-body-left .class-table-body-mini {
+  width: 100px;
+  padding: 5px 10px;
+  color: var(--black-color);
+  text-align: center;
+}
+.single-class-body-right {
+  background-color: var(--white-color);
+  padding: 15px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}/*# sourceMappingURL=classroom.css.map */

@@ -1,0 +1,73 @@
+.home{
+    background-color: var(--bg-color);
+    min-height: 100vh;
+    padding: 80px 20px 20px 90px;
+    &-content{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 20px;
+        &-item{
+            background-color: var(--white-color);
+            text-decoration: none;
+            border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            -ms-border-radius: 5px;
+            -o-border-radius: 5px;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            transition: all .3s ease;
+            -webkit-transition: all .3s ease;
+            -moz-transition: all .3s ease;
+            -ms-transition: all .3s ease;
+            -o-transition: all .3s ease;
+            &:hover{
+                box-shadow: var(--main-shadow);
+                transition: all .3s ease;
+                -webkit-transition: all .3s ease;
+                -moz-transition: all .3s ease;
+                -ms-transition: all .3s ease;
+                -o-transition: all .3s ease;
+            }
+            .item-left{
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                &-title{
+                    font-size: 20px;
+                    color: var(--black-color);
+                    font-weight: 300;
+                    letter-spacing: 1px;
+                }
+                &-count{
+                    font-size: 32px;
+                    color: var(--main-color);
+                    font-weight: 500;
+                    letter-spacing: 1px;
+                }
+            }
+            .item-right{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 70px;
+                height: 70px;
+                background-color: var(--bg-color);
+                border-radius: 50%;
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                -ms-border-radius: 50%;
+                -o-border-radius: 50%;
+                svg{
+                    font-size: 28px;
+                    color: var(--main-color);
+                    path{
+                       stroke: var(--main-color);  
+                    }
+                }
+}
+       }
+    }
+}

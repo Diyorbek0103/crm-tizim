@@ -1,0 +1,58 @@
+.exam-lists {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.exam-list {
+  display: flex;
+  flex-direction: column;
+}
+.exam-list-head {
+  display: flex;
+  background-color: var(--main-color);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.exam-list-head-item {
+  width: calc(14.3% - 1px);
+  padding: 5px;
+  text-align: center;
+  border-right: 1px solid #ccc;
+  color: #fff;
+}
+.exam-list-head-item:last-child {
+  border-right: none;
+}
+.exam-list-body {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--white-color);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.exam-list-body-items {
+  display: flex;
+  border-bottom: 1px solid #ccc;
+  align-items: center;
+}
+.exam-list-body-items:last-child {
+  border-bottom: none;
+}
+.exam-list-body-item {
+  width: calc(14.3% - 1px);
+  padding: 5px;
+  text-align: center;
+  border-right: 1px solid #ccc;
+  color: var(--black-color);
+}
+.exam-list-body-item:last-child {
+  border-right: none;
+}/*# sourceMappingURL=exam.css.map */

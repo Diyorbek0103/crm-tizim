@@ -1,0 +1,183 @@
+.course-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.course-nav-btns {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.course-nav-btn {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 10px;
+  background-color: var(--main-color);
+  color: #fff;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  cursor: pointer;
+}
+.course-nav-search {
+  position: relative;
+}
+.course-nav-search input {
+  outline: none;
+  padding: 10px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border: 1px solid var(--main-color);
+  font-size: 16px;
+}
+.course-nav-search .search-btn {
+  position: absolute;
+  right: 5px;
+  font-size: 20px;
+  cursor: pointer;
+  top: calc(50% - 10px);
+  color: var(--main-color);
+}
+
+.course-content {
+  margin-top: 40px;
+}
+.course-content-head {
+  display: flex;
+  border-radius: 5px 5px 0 0;
+  -webkit-border-radius: 5px 5px 0 0;
+  -moz-border-radius: 5px 5px 0 0;
+  -ms-border-radius: 5px 5px 0 0;
+  -o-border-radius: 5px 5px 0 0;
+  background-color: var(--main-color);
+}
+.course-content-head-item {
+  width: calc(50% - 101px);
+  padding: 5px;
+  color: #fff;
+  border-right: 1px solid #ccc;
+  font-size: 14px;
+}
+.course-content-head-item-mini {
+  width: 100px;
+  padding: 5px;
+  text-align: center;
+  color: #fff;
+  border-right: 1px solid #ccc;
+  font-size: 14px;
+}
+.course-content-head-item-mini:last-child {
+  border-right: none;
+}
+.course-content-head-box {
+  width: calc(25% - 50px);
+  padding: 5px;
+  color: #fff;
+  border-right: 1px solid #ccc;
+  font-size: 14px;
+}
+.course-content-head-box-mini {
+  width: 100px;
+  padding: 5px;
+  text-align: center;
+  color: #fff;
+  border-right: 1px solid #ccc;
+  font-size: 14px;
+}
+.course-content-head-box-mini:last-child {
+  border-right: none;
+}
+.course-content-body {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--white-color);
+  border-radius: 0 0 5px 5px;
+  -webkit-border-radius: 0 0 5px 5px;
+  -moz-border-radius: 0 0 5px 5px;
+  -ms-border-radius: 0 0 5px 5px;
+  -o-border-radius: 0 0 5px 5px;
+}
+.course-content-body-items {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+}
+.course-content-body-items:last-child {
+  border-bottom: none;
+}
+.course-content-body-item {
+  width: calc(50% - 101px);
+  padding: 5px;
+  color: var(--black-color);
+  border-right: 1px solid #ccc;
+  font-size: 14px;
+}
+.course-content-body-item-mini {
+  width: 100px;
+  padding: 5px;
+  text-align: center;
+  color: var(--black-color);
+  border-right: 1px solid #ccc;
+  font-size: 14px;
+}
+.course-content-body-item-mini:last-child {
+  border-right: none;
+}
+.course-content-body-box {
+  width: calc(25% - 50px);
+  padding: 5px;
+  color: var(--black-color);
+  border-right: 1px solid #ccc;
+  font-size: 14px;
+}
+.course-content-body-box-mini {
+  width: 100px;
+  padding: 5px;
+  text-align: center;
+  color: var(--black-color);
+  border-right: 1px solid #ccc;
+  font-size: 14px;
+}
+.course-content-body-box-mini:last-child {
+  border-right: none;
+}
+.course-content-body-btns {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+}
+.course-content-body-btn {
+  font-size: 14px;
+  cursor: pointer;
+}
+.course-content-body-btn.edit {
+  background-color: var(--main-color);
+  padding: 5px 10px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  color: #ccc;
+  display: grid;
+  place-items: center;
+}
+.course-content-body-btn.delete {
+  background-color: #ED5E5E;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  display: grid;
+  place-items: center;
+}/*# sourceMappingURL=courses.css.map */

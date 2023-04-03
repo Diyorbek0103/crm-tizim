@@ -1,0 +1,261 @@
+.login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+    min-height: 100vh;
+    background-image: url('../images/auth-one-bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    &-overlay{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        top: 45%;
+        background-color: var(--white-color);
+        clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0 100%, 0 0, 50% 25%);
+
+    }
+    &-top{
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        display: flex;
+        align-items: flex-start;
+        gap: 20px;
+    }
+    &-mode{
+        cursor: pointer;
+        background-color: var(--white-color);
+        padding:7px 10px;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+       display: flex;
+       align-items: center;
+       svg{
+        font-size: 19px;
+        color: var(--black-color);
+       }
+}
+    &-lang{ 
+        position: relative;
+        &__dropdown{ 
+        background-color: var(--white-color);
+        padding: 7px 15px;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+        cursor: pointer;
+        color: var(--black-color);
+        .current-lang{
+            display: flex;
+            align-items: center;
+        }
+        }
+        &__content{
+        box-shadow: var(--main-shadow);
+        position: absolute;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        transition: all .3s ease-in-out;
+        -webkit-transition: all .3s ease-in-out;
+        -moz-transition: all .3s ease-in-out;
+        -ms-transition: all .3s ease-in-out;
+        -o-transition: all .3s ease-in-out;
+                
+        .nav-language-item{
+            background-color: var(--white-color);
+            padding: 7px 15px;
+            border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            -ms-border-radius: 5px;
+            -o-border-radius: 5px;
+            color: var(--black-color); 
+            margin-top: 5px;
+            cursor: pointer;
+        }
+        }
+        &__content.active{
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+            transition: all .3s ease-in-out;
+            -webkit-transition: all .3s ease-in-out;
+            -moz-transition: all .3s ease-in-out;
+            -ms-transition: all .3s ease-in-out;
+            -o-transition: all .3s ease-in-out;
+}
+}
+    &::before{
+     content: '';
+     position: absolute;
+     top: 0;
+     bottom: 0;
+     left: 0;
+     right: 0;
+     background-color: rgba(17, 17, 17, 0.726);
+     z-index: 0;
+    }
+    &__brand{
+        z-index: 2;
+        font-size: 42px;
+        color: var(--main-color);
+        font-weight: 600;
+        letter-spacing: 1px;
+       img{
+        width: 150px;
+       }
+    }
+    &__form{
+        z-index: 2;
+        min-width: 480px;
+        background-color:  var(--white-color);
+        padding: 20px;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+        box-shadow: var(--main-shadow);
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        &-title{
+            text-align: center;
+            color: var(--main-color);
+            font-size: 20px;
+        }
+         form{
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            .form-label{
+                display: flex;
+                flex-direction: column;
+                gap: 7px;
+                .label-title{
+                    font-size: 14px;
+                    color: var(--gray-color);
+                }
+                .password-show{
+                    display: flex;
+                    position: relative;
+                    input{
+                        width: 100%;
+                    }
+                    svg{
+                        position: absolute;
+                        color: var(--main-color);
+                        cursor: pointer;
+                        font-size: 24px;
+                        right: 10px;
+                        top: 5px;
+                        z-index: 12;
+                    }
+                }
+                input{
+                    border: 1px solid #ccc;
+                    outline: none;
+                    padding: 7px 10px;
+                    font-size: 16px;
+                    border-radius: 5px;
+                    -webkit-border-radius: 5px;
+                    -moz-border-radius: 5px;
+                    -ms-border-radius: 5px;
+                    -o-border-radius: 5px;
+                    &:focus{
+                        border-color: var(--main-hover);
+                        transition: all .2s ease-in-out;
+                        -webkit-transition: all .2s ease-in-out;
+                        -moz-transition: all .2s ease-in-out;
+                        -ms-transition: all .2s ease-in-out;
+                        -o-transition: all .2s ease-in-out;
+                    }
+           }
+            }
+            .login-btn{
+              border: none;
+              outline: none;
+              text-align: center;
+              border-radius: 5px;
+              -webkit-border-radius: 5px;
+              -moz-border-radius: 5px;
+              -ms-border-radius: 5px;
+              -o-border-radius: 5px;
+              padding: 7px 10px;
+              background-color: var(--main-color);
+              font-size: 16px;
+              cursor: pointer;
+              color: var(--white-color);
+              letter-spacing: 1px;
+              transition: all .2s ease-in-out;
+              -webkit-transition: all .2s ease-in-out;
+              -moz-transition: all .2s ease-in-out;
+              -ms-transition: all .2s ease-in-out;
+              -o-transition: all .2s ease-in-out;
+              &:hover{
+                background-color: var(--main-hover);
+              }
+           }
+        //    .choose-role{
+        //     display: flex;
+        //     justify-content: center;
+        //     gap: 10px;
+        //     .role{
+        //         margin: 10px 0;
+        //         border: 1px solid #ccc;
+        //         color: var(--gray-color);
+        //         display: flex;
+        //         align-items: center;
+        //         gap: 10px;
+        //         padding: 7px 10px;
+        //         border-radius: 5px;
+        //         -webkit-border-radius: 5px;
+        //         -moz-border-radius: 5px;
+        //         -ms-border-radius: 5px;
+        //         -o-border-radius: 5px;
+        //         cursor: pointer;
+        //        .circle{
+        //         width: 10px;
+        //         height: 10px;
+        //         background-color: var(--gray-color);
+        //         border-radius: 50%;
+        //         -webkit-border-radius: 50%;
+        //         -moz-border-radius: 50%;
+        //         -ms-border-radius: 50%;
+        //         -o-border-radius: 50%;
+        //     }  
+        //     } 
+        //     .role.active{
+        //         color: var(--main-color);
+        //         border-color: var(--main-color);
+        //         .circle{
+        //             background-color: var(--main-color);
+        //         }
+        //     }
+        //    }
+         }
+    }
+}
+.react-international-phone-input-container {
+    display: flex;
+    gap: 10px;
+}
+.login__form form .form-label input{
+    width: 100%;
+}
+.react-international-phone-input-container .react-international-phone-country-selector-button{
+  border-radius: 5px!important;
+  -webkit-border-radius: 5px!important;
+  -moz-border-radius: 5px!important;
+  -ms-border-radius: 5px!important;
+  -o-border-radius: 5px!important;
+}
